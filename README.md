@@ -4,5 +4,3 @@ This is Online Travel Booking Application created with React/Redux, Node.js/Expr
 
 If you would like to see this project, click the link below.
 
-https://online-ecommerce-store.herokuapp.com/
-
