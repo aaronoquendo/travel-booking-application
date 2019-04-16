@@ -1,7 +1,7 @@
 {
-  "name": "travel-booking-application",
+  "name": "backend",
   "version": "1.0.0",
-  "description": "This is Online Travel Booking Application created with React/Redux, Node.js/Express.js, and Mysql as the database",
+  "description": "",
   "main": "index.js",
   "engines": {
     "node": "11.0.0",
@@ -9,14 +9,23 @@
   },
   "scripts": {
     "start": "node index.js",
-    "backend": "npm run server --prefix backend",
+    "server": "nodemon index.js",
     "frontend": "npm run start --prefix frontend",
-    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "dev": "concurrently \"npm run server\" \"npm run frontend\"",
     "create-react": "npm create-react-app frontend",
     "heroku-postbuild": "cd frontend && npm install --only=dev && npm install && npm run build"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "http": "0.0.0",
+    "morgan": "^1.9.1",
+    "mysql": "^2.16.0",
+    "nodemon": "^1.18.11",
+    "path": "^0.12.7"
+  }
 }
-
-
