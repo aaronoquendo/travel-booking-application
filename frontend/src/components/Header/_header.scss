@@ -1,0 +1,69 @@
+#site-header{
+  height: $headerHeight;
+  background: $headerBackgroundColor;
+  color: white;
+  letter-spacing: 1px;
+  .site-header-container{
+    height: $headerHeight;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header-left{
+      height: $headerHeight;
+      display: flex;
+      align-items: center;
+      
+      .logo{
+        height: $headerHeight;
+        display: flex;
+      
+        align-items: center;
+      
+        h1{
+          font-size: 2rem;
+        }
+      }
+      .category-links{
+        height: $headerHeight;
+        margin-left: 40px;
+        
+        list-style-type: none;
+        li{
+          display: inline-block;
+          margin-right: 20px;
+          a{
+         
+          }
+        }
+   
+      }
+    }
+
+
+
+    .account-links{
+      height: $headerHeight;
+      position: relative;
+      right: 0;
+      display: flex;
+      justify-content:center;
+      list-style-type: none;
+      float: right;
+    }
+    ul{
+      display: flex;
+      align-items: center;
+      li{
+  
+        a{
+          color: white;
+        }
+      }
+      li:not(:last-child){
+          margin-right:10px;
+      }
+    }
+  }
+
+}
+
