@@ -13,13 +13,13 @@ app.use(bodyParser.json({type: '*/*' }));
 app.use(bodyParser.urlencoded({extended: false}));
 
 //Serve any static files built by React
-// if(process.env.PORT){
-//   app.use(express.static(path.join(__dirname, 'client', 'build')));
+if(process.env.PORT){
+  app.use(express.static(path.join(__dirname, 'frontend', 'build')));
 
-//   app.get('/*', (req, res) => {
-//     res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'))
-//   });
-// }
+  app.get('/*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'frontend', 'build', 'index.html'))
+  });
+}
 
 console.log('hello');
 const PORT = process.env.PORT || 5000;
