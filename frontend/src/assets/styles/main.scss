@@ -1,7 +1,10 @@
 @import "reset";
 @import "variables";
 
-@import "../../components/Header/header";
-html{
 
+@import "../../components/Header/header";
+@import "../../components/HeroDisplay/heroDisplay";
+@import "../../components/Footer/footer";
+*, body, html {
+  font-family: 'Roboto', sans-serif;
 }

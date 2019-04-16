@@ -1,0 +1,41 @@
+.site-footer{
+  height: auto;
+  background: #f7f7f7;
+  color: #001832;
+  .footer-container{
+    padding: 42px 22px;
+
+    .footer-row1{
+      margin: 0;
+      .footer-col{
+        padding: 0;
+        .footer-col-header{
+          color: #001832;
+          font-size: 1rem;
+          font-weight: 500;
+          letter-spacing: .25px;
+          padding-bottom: 16px;
+        }
+        .footer-col-item{
+          padding: 5px 0;
+          margin: 0;
+          font-size: .9rem;
+        }
+      }
+    }
+    .footer-footnote1{
+      text-align: center;
+      line-height: 22px;
+      padding: 0 16px;
+      margin: 20px 0 15px 0;
+      font-size: .8rem;
+    }
+    .footer-footnote2{
+      text-align: center;
+      line-height: 22px;
+      padding: 0 16px;
+      margin: 0px 0 10px 0;
+      font-size: .8rem;
+    }
+  }
+}
