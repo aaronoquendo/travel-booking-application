@@ -1,43 +1,49 @@
 import React, { Component } from 'react';
 import RecommendedItem from './RecommendedItem'
-
+import "./_recommendedSection.scss"
 
 const trips = [
   {
     id: 1,
-    city: 'miami',
-    state: 'florida',
-    departure: 'new york',
-    desination: 'miami florida',
+    city: 'Miami',
+    state: 'Florida',
+    departure: 'New York',
+    destination: 'Miami, Florida',
     lowest_price: 389,
-    start_date: '05-15-2019',
-    end_date: '05-23-2019',
+    start_date: 'Aug 18',
+    end_date: 'Aug 29',
+    num_of_days: 11,
     num_of_stops: 0,
-    image: ''
+    image: 'https://s7.bluegreenvacations.com/is/image/BGV/florida-miami-south-beach-ocean-drive-art-deco-nightlife?$bg2-hero-lg$&crop=0,0,2396,1544&anchor=1198,772',
+    link: '#'
   },
   {
     id: 2,
     city: 'los angeles',
-    state: 'california',
-    departure: 'new york',
-    desination: 'los-angeles california',
+    state: 'California',
+    departure: 'New York',
+    destination: 'Los Angeles, California',
     lowest_price: 389,
     start_date: '09-10-2019',
     end_date: '09-17-2019',
+    num_of_days: 7,
     num_of_stops: 1,
-    image: ''
+    image: 'https://media.timeout.com/images/104703258/image.jpg',
+    link: '#'
   },
   {
     id: 3,
     city: 'las vegas',
-    state: 'nevada',
-    departure: 'new york',
-    desination: 'las-vegas nevada',
+    state: 'Nevada',
+    departure: 'New York',
+    destination: 'Las Vegas, Nevada',
     lowest_price: 126,
     start_date: '04-30-2019',
     end_date: '05-06-2019',
+    num_of_days: 10,
     num_of_stops: 0,
-    image: ''
+    image: 'https://assets.simpleviewcms.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/lasvegas/PM_Strip_2014_PH_North_Night_0069G_optimized_f4c0f862-8bb4-49ee-a728-98d2c1846714.jpg',
+    link: '#'
   }
 ]
 
@@ -60,7 +66,9 @@ class RecommendedSection extends Component {
     return (
       <div className="recommended-section">
         <div className="container recommended-sec-container">
+        <h2 className="recommended-title">Popular from New York</h2>
           <div className="row recommended-sec-row">
+
           {RecommendedItems.map( (itemDetail, key) => {
             return <RecommendedItem itemDetail={itemDetail} key={key}/>;
           })}
