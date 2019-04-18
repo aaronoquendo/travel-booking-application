@@ -38,7 +38,7 @@ class Footer extends Component {
     
             </ul>
           </div>
-          <p className="footer-footnote1">Travelin, Travelin.com, NAME YOUR OWN DEAL, EXPRESS PRICES and EVENING ONLY DEALS are service marks or registered service marks of Travelin.com LLC. All material herein © 1994-2019 Travelin.com LLC, all rights reserved. priceline.com LLC is located at 700 Wakelin Ave. Prescoot, NV 89875.</p>
+          <p className="footer-footnote1">Travelin, Travelin.com, NAME YOUR OWN DEAL, EXPRESS PRICES and EVENING ONLY DEALS are service marks or registered service marks of Travelin.com LLC. All material herein © 1994-2019 Travelin.com LLC, all rights reserved. travelin.com LLC is located at 700 Wakelin Ave. Prescoot, NV 89875.</p>
           <p className="footer-footnote2">*Travelin Name Your Own Deal and Express Prices services are different from private price services. Exact hotel, airline and rental car company are shown only after booking. All sales final.</p>
         </div>
       </footer>
