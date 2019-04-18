@@ -4,6 +4,7 @@
   color: white;
   letter-spacing: 1px;
   .site-header-container{
+    max-width: 1440px;
     height: $headerHeight;
     display: flex;
     justify-content: space-between;
@@ -12,17 +13,24 @@
       height: $headerHeight;
       display: flex;
       align-items: center;
-      
-      .logo{
-        height: $headerHeight;
-        display: flex;
-      
-        align-items: center;
-      
-        h1{
-          font-size: 2rem;
+      a{
+        color:white;
+        text-decoration: none;
+        .logo{
+          height: $headerHeight;
+          display: flex;
+        
+          align-items: center;
+          img{
+            width: 105px;
+            height: 25px;
+          }
+          h1{
+            font-size: 2rem;
+          }
         }
       }
+   
       .category-links{
         height: $headerHeight;
         margin-left: 40px;
@@ -32,7 +40,8 @@
           display: inline-block;
           margin-right: 20px;
           a{
-         
+            color: #556b7f;
+            text-decoration: none;
           }
         }
    
@@ -42,6 +51,7 @@
 
 
     .account-links{
+      
       height: $headerHeight;
       position: relative;
       right: 0;
@@ -56,7 +66,8 @@
       li{
   
         a{
-          color: white;
+          color: #556b7f;
+          text-decoration: none;
         }
       }
       li:not(:last-child){

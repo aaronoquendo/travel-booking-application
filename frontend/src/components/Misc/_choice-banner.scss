@@ -1,0 +1,51 @@
+.choice-banner{
+  background: url('https://www.choicehotels.com/cms/images/choice-hotels/choice-privileges/img_cp-earn-hero-bg/2048/img_cp-earn-hero-bg.jpg');
+  background-image: url('https://i.ibb.co/QNsbkjm/banner-img.png');
+  background-size: cover;
+  height: 300px;
+  .choice-banner-content{
+    height: 300px;
+    padding: 30px;
+    display: flex;
+  
+
+    flex-direction: column;
+    text-align: center;
+    h2{
+      font-size: 24px;
+      letter-spacing: .02em;
+      font-weight: 300;
+      text-transform: uppercase;
+      color:white;
+      margin: 10px 0;
+      span{
+        strong{
+          font-size: 30px;
+          font-weight: 700;
+        }
+      }
+    }
+    .list-unstyled{
+      margin-bottom: 20px;
+      li{
+        font-size: 15px;
+        line-height: 1.6;
+        color: white;
+      }
+      
+    }
+    .btn-cta{
+      display: inline-block;
+      outline: none;
+      margin: 0 auto;
+      font-weight: 400;
+      width: 200px;
+      text-align: center;
+      color:white;
+      background: #e26811;
+      border-radius: 2px;
+      cursor: pointer;
+      padding: 16px 20px;
+    }
+  }
+}
