@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Link } from 'react-router-dom';
 
 class Header extends Component {
 
@@ -14,23 +14,23 @@ class Header extends Component {
                 {/* <h1>Travelin</h1> */}
               </div>
             </a>
-
-
             <ul className="category-links">
-              <li><a href="#/">Flights</a></li>
-              <li><a href="#/">Hotels</a></li>
-              <li><a href="#/">Cars</a></li>
-              <li><a href="#/">Packages</a></li>
-              <li><a href="#/">Cruises</a></li>
+              <li><Link className="tab" to="/tab/flights">Flights</Link></li>
+              <li><Link className="tab" to="/tab/hotels">Hotels</Link><a href="#/"></a></li>
+              <li><Link className="tab" to="/tab/cars">Cars</Link><a href="#/"></a></li>
+              <li><Link className="tab" to="/tab/cruises">Cruises</Link><a href="#/"></a></li>
             </ul>
           </div>
-
-      
           <ul className="account-links">
+            <li><a href="#/">Blog</a></li>
             <li><a href="#/">Trips</a></li>
             <li><a href="#/">Sign In</a></li>
           </ul>
-
+          <button id='header-hamburger-icon' className='hamburger hamburger--slider' type='button' onClick={this.openMobileMenu}>
+            <span className='hamburger-box'>
+              <span className='hamburger-inner' />
+            </span>
+          </button>
         </div>
       </header>
     );

@@ -2,9 +2,10 @@
   background: url('https://www.choicehotels.com/cms/images/choice-hotels/choice-privileges/img_cp-earn-hero-bg/2048/img_cp-earn-hero-bg.jpg');
   background-image: url('https://i.ibb.co/QNsbkjm/banner-img.png');
   background-size: cover;
-  height: 300px;
+  min-height: 300px;
   .choice-banner-content{
-    height: 300px;
+    min-height: 300px;
+    height: auto;
     padding: 30px;
     display: flex;
   

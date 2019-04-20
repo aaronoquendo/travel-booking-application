@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './assets/styles/css/bootstrap.min.css'
 import './assets/styles/css/fontawesome.min.css'
+import './assets/styles/css/hamburgers.min.css'
 import './assets/styles/main.scss'
 
 import Header from './components/Header/Header'
@@ -14,7 +15,6 @@ class App extends Component {
       <div className="app">
         <Header />
         <HeroDisplay />
-
         <RecommendedSection />
         <Banner />
         <Footer />

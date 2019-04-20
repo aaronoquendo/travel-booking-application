@@ -1,0 +1,160 @@
+.flight-form{
+  .container{
+    form{
+      
+      .trip-type{
+        margin-top:40px;
+        display: flex;
+        flex-direction: row;
+        .trip-type-label-first{
+          padding-left: 0;
+        }
+        label{
+          display: flex;
+          align-items: center;
+          
+          margin-right: 1.125rem;
+     
+          margin-bottom: .75rem;
+          color: #fff;
+          font-size: .75rem;
+          cursor: pointer;
+        
+          padding-left: 1.5rem;
+          .trip-type-input{
+       
+          }
+          span{
+            margin-left: 14px;
+            font-size: 1.1rem;
+          }
+        }
+       
+        .radio-circle{}
+      }
+      .inner-input-container{
+        display: flex;
+        color:white;
+        
+        .row{
+          width: 100%;
+          margin-right: 0px;
+          margin-left: 0px;
+        }
+        .from-and-to-input-container{
+          display: flex;
+          width: 50%;
+          padding: 0;
+          .from-input-container{
+            padding: 0;
+            width: 100%;
+            .from-input{
+              label{
+                display: block;
+              
+               
+              }
+              input{
+                height: 45px;
+                border-radius: .4rem 0 0 .4rem;
+ 
+                width: 100%;
+                margin-bottom: 12px;
+              }
+            }
+         
+         
+          }
+        
+          .to-input-container{
+            width: 100%;
+            .to-input{
+              label{
+                display: block;
+                span{
+                  margin-left:10px;
+                }
+              }
+              input{
+                height: 45px;
+                border-radius: .4rem 0 0 .4rem;
+                margin-bottom: 12px;
+                width: 100%;
+              }
+            }
+          }
+       
+        }
+        .depart-return-container{
+          display: block;
+          width: 25%;
+          padding: 0;
+          .depart{
+            display: inline-block;
+            width: 50%;
+            label{
+              display: block;
+            }
+            .react-datepicker-wrapper{
+              width: 100%;
+              .react-datepicker__input-container{
+                width: 100%;
+                input{
+                  height: 45px;
+                  margin-bottom: 12px;
+                  width: 100%;
+                }
+              }
+            }
+          
+          }
+          .return{
+            display: inline-block;
+            width: 50%;
+            label{
+              display: block;
+            }
+            .react-datepicker-wrapper{
+              width: 100%;
+              .react-datepicker__input-container{
+                width: 100%;
+                input{
+                  height: 45px;
+                  margin-bottom: 12px;
+                  width: 100%;
+                }
+              }
+            }
+            button{
+              height: 45px;
+              margin-bottom: 5px;
+              width: 100%;
+            }
+          }
+          .non-stop-flights-container{
+            display: block;
+          }
+        }
+        .num-passengers-container{
+        
+          padding: 0;
+          label{}
+          select{
+            width: 100%;
+            height: 45px;
+          
+            margin-bottom: 12px;
+            width: 100%;
+          }
+          button{
+ 
+          }
+        }
+      }
+      .search-btn-wrapper{
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+}

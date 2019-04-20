@@ -9,8 +9,8 @@ class HotelForm extends Component {
       <h1>Save more on your next hotel</h1>
       <h3>Thousands of deals made every day</h3>
       <div className="deal-tabs">
-        <Link className="tab tab-first" to="/tab/hotels" style={{background: 'white'}}>Hotels</Link>
-        <Link className="tab" to="/tab/flights">Flights</Link>
+        <Link className="tab tab-first" to="/tab/flights" >Flights</Link>
+        <Link className="tab" to="/tab/hotels" style={{background: 'white'}}>Hotels</Link>
         <Link className="tab" to="/tab/flight-hotel">Flight + Hotel</Link>
         <Link className="tab" to="/tab/cars">Cars</Link>
         <Link className="tab" to="/tab/cruises">Cruises</Link>

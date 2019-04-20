@@ -4,7 +4,7 @@
   color: white;
   letter-spacing: 1px;
   .site-header-container{
-    max-width: 1440px;
+    max-width: 1280px;
     height: $headerHeight;
     display: flex;
     justify-content: space-between;
@@ -22,6 +22,8 @@
         
           align-items: center;
           img{
+            top: -1px;
+            position: relative;
             width: 105px;
             height: 25px;
           }
@@ -42,6 +44,9 @@
           a{
             color: #556b7f;
             text-decoration: none;
+            letter-spacing: 2px;
+            font-size: 16px;
+            font-weight: 500;
           }
         }
    
@@ -68,6 +73,9 @@
         a{
           color: #556b7f;
           text-decoration: none;
+          letter-spacing: 2px;
+          font-size: 16px;
+          font-weight: 500;
         }
       }
       li:not(:last-child){
@@ -78,3 +86,6 @@
 
 }
 
+#header-hamburger-icon{
+  display: none;
+}

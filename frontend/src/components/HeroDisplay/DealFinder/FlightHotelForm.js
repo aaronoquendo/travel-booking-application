@@ -8,8 +8,8 @@ class FlightHotelForm extends Component {
         <h1>Looking to save on your hotel and flight?</h1>
         <h3>We compare thousands of deals to get you there</h3>
         <div className="deal-tabs">
-          <Link className="tab tab-first" to="/tab/hotels">Hotels</Link>
-          <Link className="tab" to="/tab/flights">Flights</Link>
+        <Link className="tab tab-first" to="/tab/flights">Flights</Link>
+        <Link className="tab" to="/tab/hotels">Hotels</Link>
           <Link className="tab" to="/tab/flight-hotel" style={{background: 'white'}}>Flight + Hotel</Link>
           <Link className="tab" to="/tab/cars">Cars</Link>
           <Link className="tab" to="/tab/cruises">Cruises</Link>

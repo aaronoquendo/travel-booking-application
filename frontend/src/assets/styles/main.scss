@@ -4,20 +4,28 @@
 
 @import "../../components/Header/header";
 @import "../../components/HeroDisplay/heroDisplay";
+@import "../../components/HeroDisplay/DealFinder/flightform";
 @import "../../components/Footer/footer";
 @import "../../components/Misc/choice-banner";
 
 *, body, html {
   font-family: 'Roboto', sans-serif;
 }
-
-
+.row-override{
+  padding: 0;
+  margin: 0;
+}
+.col-override{
+  padding: 0;
+  margin: 0;
+}
 @media (min-width: 576px) {
   .container {
     max-width: 576px;
   }
 
 }
+
 
 @media (min-width: 768px) {
   .container {
@@ -26,11 +34,21 @@
 
 }
 @media (max-width: 768px) {
-
+  //Header CSS Media Queries
+  .category-links{
+    display: none !important;
+  }
+  .account-links{
+    display: none !important;
+  }
+  #header-hamburger-icon{
+    display: block;
+  }
   .site-footer .footer-container .footer-row1 .footer-col {
     text-align: center;
     margin-bottom: 30px;
   }
+
 }
 
 
