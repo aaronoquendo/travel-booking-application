@@ -5,7 +5,7 @@ class RecommendedItem extends Component {
   render() {
     const { itemDetail } = this.props
     return (
-      <div className="recommended-item col-12 col-sm-12 col-md-6 col-lg-4">
+      <div className="recommended-item col-12 col-sm-6 col-md-6 col-lg-4">
     
           <div className="recommended-item-container">
             <a href={itemDetail.link}>

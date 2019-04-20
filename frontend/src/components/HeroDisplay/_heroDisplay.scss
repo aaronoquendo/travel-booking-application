@@ -1,10 +1,15 @@
 .hero-display{
-
+  padding-top:60px;
   background:url('https://images.pexels.com/photos/2106452/pexels-photo-2106452.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
-  margin-bottom: 45px;
+  background: linear-gradient(
+  rgba(20,20,20, .55), 
+  rgba(20,20,20, .55)),
+  url('https://images.pexels.com/photos/38302/father-daughter-beach-sea-38302.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  margin-bottom: 25px;
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
-
+  min-height: 410px;
   .hero-display-container{
     padding: 64px 15px;
     .category-form{

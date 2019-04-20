@@ -3,6 +3,13 @@
   background: $headerBackgroundColor;
   color: white;
   letter-spacing: 1px;
+  position: fixed;
+
+  top: 0;
+  border-bottom: 1px solid #d1d1d5;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.4);
+  z-index: 1;
+  width:100%;
   .site-header-container{
     max-width: 1280px;
     height: $headerHeight;
@@ -88,4 +95,33 @@
 
 #header-hamburger-icon{
   display: none;
+}
+
+@keyframes menu_sticky {
+  0% {
+    margin-top: -120px;
+    opacity: 0;
+  }
+
+  50% {
+    margin-top: -64px;
+    opacity: 0;
+  }
+
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+.site-header-fixed{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  animation-name: menu_sticky;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
 }

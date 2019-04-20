@@ -5,34 +5,11 @@ class CarForm extends Component {
   render() {
     return (
       <div className="category-form-container">
-        <h1>Looking to save more on your rental car?</h1>
-        <h3>We compare thousands of deals to get you there</h3>
-        <div className="deal-tabs">
-          <Link className="tab tab-first" to="/tab/flights">Flights</Link>
-          <Link className="tab" to="/tab/hotels">Hotels</Link>
-          <Link className="tab" to="/tab/flight-hotel">Flight + Hotel</Link>
-          <Link className="tab" to="/tab/cars" style={{background: 'white'}}>Cars</Link>
-          <Link className="tab" to="/tab/cruises">Cruises</Link>
-        </div>
+        <h1 style={{textAlign: 'center'}}>Looking to save more on your rental car?</h1>
+        <h3 style={{textAlign: 'center'}}>We compare thousands of deals to get you there</h3>
         <div className="deal-form car-form">
           <div className="container">
-            <div className="form-container">
-              <input type="text" className="form-control" placeholder="Where to?" />
-
-              <input type="text" className="form-control" placeholder="Check-in - Check-out" />
-              <select className="custom-select">
-                <option selected value="1">1 Room</option>
-                <option value="2">2 Rooms</option>
-                <option value="3">3 Rooms</option>
-                <option value="4">4 Rooms</option>
-                <option value="5">5 Rooms</option>
-                <option value="6">6 Rooms</option>
-                <option value="7">7 Rooms</option>
-                <option value="8">8 Rooms</option>
-                <option value="9">9 Rooms</option>
-                <option value="9">10+ Rooms</option>
-              </select>
-            </div>
+            <h2 style={{marginTop: '50px', marginBottom: '50px',fontSize: '48px', textAlign: 'center', color: 'white'}}>Coming Soon!</h2>
           </div>
         </div>
       </div>

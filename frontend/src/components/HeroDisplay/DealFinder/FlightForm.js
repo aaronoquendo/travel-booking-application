@@ -122,14 +122,14 @@ class FlightForm extends Component {
 
 
                   <div class="depart-return-container col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-                    <div class="depart col-12 col-override col-sm-6 col-md-3 col-lg-6 col-xl-6">
+                    <div class="depart col-override col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                       <label class="" for="depart-fsc-datepicker-button">Depart</label>
                       <DatePicker 
                         selected={this.state.startDate}
                         onChange={this.handleStartDateChange}
                       />
                     </div>
-                    <div class="return">
+                    <div class="return col-override col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                       <label class="" for="return-fsc-datepicker-button">Return</label>
                       <DatePicker 
                         selected={this.state.endDate}
