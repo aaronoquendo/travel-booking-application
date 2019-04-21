@@ -3,7 +3,6 @@ $formColPadding: 10px;
 .flight-form{
   .container{
     form{
-      
       .trip-type{
         margin-top:40px;
         display: flex;
@@ -23,14 +22,12 @@ $formColPadding: 10px;
         
           padding-left: 1.5rem;
           .trip-type-input{
-       
           }
           span{
             margin-left: 14px;
             font-size: 1.1rem;
           }
         }
-       
         .radio-circle{}
       }
       .inner-input-container{
@@ -54,7 +51,6 @@ $formColPadding: 10px;
               label{
                 display: block;
                 padding: 0;
-               
               }
               input{
                 height: 45px;
@@ -71,7 +67,6 @@ $formColPadding: 10px;
                 
               }
             }
-         
           }
         
           .to-input-container{
@@ -101,7 +96,6 @@ $formColPadding: 10px;
               }
             }
           }
-       
         }
         .depart-return-container{
           display: block;
@@ -135,7 +129,6 @@ $formColPadding: 10px;
             display: inline-block;
             width: 50%;
             padding: 0 10px;
-         
             label{
               display: block;
               margin-bottom: 15px;
@@ -173,11 +166,8 @@ $formColPadding: 10px;
         }
         .num-passengers-container{
           padding: 0 10px;
-       
           label{
-         
             margin-bottom: 15px;
-           
           }
           select{
             width: 100%;
@@ -187,7 +177,6 @@ $formColPadding: 10px;
             width: 100%;
           }
           button{
- 
           }
         }
       }
@@ -196,7 +185,6 @@ $formColPadding: 10px;
         justify-content: flex-end;
         margin: 0 $formColPadding;
         .search-btn{
-         
           padding: .375rem 1.5rem;
           border-radius: 1.3125rem;
           border-color: #00d775;
@@ -213,8 +201,7 @@ $formColPadding: 10px;
             margin-left: 8px;
             position: relative;
             top:2px;
-             font-weight: 600;
-          
+            font-weight: 600;
           }
         }
       }

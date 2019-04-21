@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import MobileMenu from '../MobileMenu/MobileMenu'
 import $ from 'jquery';
 class Header extends Component {
   constructor(props) {
     super(props)
     this.state = {
+      isMobileMenuOpen: false
     }
 
     this.handleScroll = this.handleScroll.bind(this)
+    this.openMobileMenu = this.openMobileMenu.bind(this)
   }
 
   componentDidMount () {
@@ -26,9 +28,17 @@ class Header extends Component {
       } else {
           $(".site-header-class").removeClass("site-header-fixed");
       }
-  });
+    });
   }
-
+  openMobileMenu () {
+    let hamburgerIcon = document.querySelector('.hamburger.hamburger--slider')
+    let mobileMenu = document.querySelector('.mobile-menu')
+    this.setState((state) => {
+      hamburgerIcon.classList.toggle('is-active')
+      mobileMenu.classList.toggle('isFlexActive')
+      return { isMobileMenuOpen: !state.isMobileMenuOpen }
+    })
+  }
   render() {
     return (
       <header id="site-header" className="site-header-class">
@@ -57,6 +67,7 @@ class Header extends Component {
               <span className='hamburger-inner' />
             </span>
           </button>
+          <MobileMenu />
         </div>
       </header>
     );

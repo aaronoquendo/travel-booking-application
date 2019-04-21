@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 class HotelForm extends Component {
   render() {
     return (
-  
     <div className="category-form-container">
       <h1 style={{textAlign: 'center'}}>Save more on your next hotel</h1>
       <h3 style={{textAlign: 'center'}}>Thousands of deals made every day</h3>
