@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MobileMenu from '../MobileMenu/MobileMenu';
+import MobileMenu from './MobileMenu';
 import $ from 'jquery';
 class Header extends Component {
   constructor(props) {

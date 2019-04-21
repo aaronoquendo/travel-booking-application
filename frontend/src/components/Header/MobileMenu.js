@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import '../../assets/styles/main.scss'
 class MobileMenu extends Component {
   constructor(props) {
     super(props)
