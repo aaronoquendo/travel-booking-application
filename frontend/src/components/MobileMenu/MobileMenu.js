@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 class MobileMenu extends Component {
@@ -18,21 +18,20 @@ class MobileMenu extends Component {
       return { isMobileMenuOpen: !state.isMobileMenuOpen }
     })
   }
-    render () {
-      return ReactDOM.createPortal(
-        <React.Fragment className="mobile-menu">
-    
-          ksghjsghjdhg
-          <button id='header-hamburger-icon' className='hamburger hamburger--slider' type='button' onClick={this.openMobileMenu}>
-                <span className='hamburger-box'>
-                  <span className='hamburger-inner' />
-                </span>
-              </button>
-        </React.Fragment>,
-        document.querySelector('#MobileMenu')
-      );
-    }
+  render () {
+    return ReactDOM.createPortal(
+      <React.Fragment className="mobile-menu">
   
+        ksghjsghjdhg
+        <button id='header-hamburger-icon' className='hamburger hamburger--slider' type='button' onClick={this.openMobileMenu}>
+              <span className='hamburger-box'>
+                <span className='hamburger-inner' />
+              </span>
+            </button>
+      </React.Fragment>,
+      document.querySelector('#MobileMenu')
+    )
+  }
 }
 
 export default MobileMenu;

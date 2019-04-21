@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import HotelForm from './DealFinder/HotelForm'
 import FlightHotelForm from './DealFinder/FlightHotelForm'
