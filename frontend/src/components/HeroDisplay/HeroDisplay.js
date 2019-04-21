@@ -12,7 +12,7 @@ class HeroDisplay extends Component {
         <div className="display-wrapper"></div>
         <div className="container hero-display-container">
           <div className="row">
-            <div className="category-form col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div className="category-form col-override col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
               <Route exact path='/' component={FlightForm} />
               <Route exact path='/tab/flights' component={FlightForm} />
               <Route exact path='/tab/hotels' component={HotelForm} />

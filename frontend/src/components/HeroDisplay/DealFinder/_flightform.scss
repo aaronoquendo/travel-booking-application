@@ -1,3 +1,5 @@
+$formColPadding: 10px;
+
 .flight-form{
   .container{
     form{
@@ -6,15 +8,14 @@
         margin-top:40px;
         display: flex;
         flex-direction: row;
+        padding-left: $formColPadding;
         .trip-type-label-first{
           padding-left: 0;
         }
         label{
           display: flex;
           align-items: center;
-          
           margin-right: 1.125rem;
-     
           margin-bottom: .75rem;
           color: #fff;
           font-size: .75rem;
@@ -49,37 +50,54 @@
             padding: 0;
             width: 100%;
             .from-input{
+              padding: 0 10px;
               label{
                 display: block;
-              
+                padding: 0;
                
               }
               input{
                 height: 45px;
-                border-radius: .4rem 0 0 .4rem;
- 
+                border-radius: .4rem .4rem .4rem .4rem;
                 width: 100%;
                 margin-bottom: 12px;
               }
             }
-         
+            label{
+              padding-left: $formColPadding;
+              margin-bottom: 15px;
+              span{
+                padding-left: $formColPadding;
+                
+              }
+            }
          
           }
         
           .to-input-container{
             width: 100%;
             .to-input{
+              padding: 0 10px;
               label{
                 display: block;
+                padding: 0;
                 span{
                   margin-left:10px;
                 }
               }
               input{
                 height: 45px;
-                border-radius: .4rem 0 0 .4rem;
+                border-radius: .4rem .4rem .4rem .4rem;
                 margin-bottom: 12px;
                 width: 100%;
+              }
+            }
+            label{
+              padding-left: $formColPadding;
+              margin-bottom: 15px;
+              span{
+                padding-left: $formColPadding;
+                
               }
             }
           }
@@ -92,9 +110,13 @@
           .depart{
             display: inline-block;
             width: 50%;
+            padding: 0 10px;
+            border-radius: .4rem .4rem .4rem .4rem;
             label{
               display: block;
+              margin-bottom: 15px;
             }
+            
             .react-datepicker-wrapper{
               width: 100%;
               .react-datepicker__input-container{
@@ -103,6 +125,7 @@
                   height: 45px;
                   margin-bottom: 12px;
                   width: 100%;
+                  border-radius: .4rem .4rem .4rem .4rem;
                 }
               }
             }
@@ -111,9 +134,13 @@
           .return{
             display: inline-block;
             width: 50%;
+            padding: 0 10px;
+         
             label{
               display: block;
+              margin-bottom: 15px;
             }
+            
             .react-datepicker-wrapper{
               width: 100%;
               .react-datepicker__input-container{
@@ -122,6 +149,7 @@
                   height: 45px;
                   margin-bottom: 12px;
                   width: 100%;
+                  border-radius: .4rem .4rem .4rem .4rem;
                 }
               }
             }
@@ -133,12 +161,24 @@
           }
           .non-stop-flights-container{
             display: block;
+            label{
+              padding-left: $formColPadding;
+              margin-bottom: 15px;
+              span{
+                padding-left: $formColPadding;
+                
+              }
+            }
           }
         }
         .num-passengers-container{
-        
-          padding: 0;
-          label{}
+          padding: 0 10px;
+       
+          label{
+         
+            margin-bottom: 15px;
+           
+          }
           select{
             width: 100%;
             height: 45px;
@@ -154,6 +194,29 @@
       .search-btn-wrapper{
         display: flex;
         justify-content: flex-end;
+        margin: 0 $formColPadding;
+        .search-btn{
+         
+          padding: .375rem 1.5rem;
+          border-radius: 1.3125rem;
+          border-color: #00d775;
+          font-size: 1.5rem;
+          color:white;
+          line-height: 1.875rem;
+          user-select: none;
+          outline: none;
+          font-weight: 500;
+          letter-spacing: .25px;
+          background-color: #00d775;
+    cursor: pointer;
+          .fas.fa-arrow-right{
+            margin-left: 8px;
+            position: relative;
+            top:2px;
+             font-weight: 600;
+          
+          }
+        }
       }
     }
   }

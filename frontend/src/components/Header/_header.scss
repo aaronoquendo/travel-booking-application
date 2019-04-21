@@ -95,8 +95,16 @@
 
 #header-hamburger-icon{
   display: none;
+  outline: none;
 }
+.hamburger-box{
+  width: 30px;
 
+}
+.hamburger--slider .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+  width: 30px;
+  height: 4px;
+}
 @keyframes menu_sticky {
   0% {
     margin-top: -120px;

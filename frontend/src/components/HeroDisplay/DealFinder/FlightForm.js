@@ -167,9 +167,7 @@ class FlightForm extends Component {
               <div className="search-btn-wrapper">
                 <button type="submit" class="search-btn" aria-label="Search flights">
                   Search for flights
-                  <span>
-                    <i class="fas fa-arrow-right"></i>
-                  </span>
+                  <i class="fas fa-arrow-right"></i>
                 </button>
               </div>
             </form>
