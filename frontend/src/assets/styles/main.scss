@@ -1,14 +1,12 @@
 @import "reset";
 @import "variables";
-
-
 @import "../../components/Header/header";
-@import "../../components/MobileMenu/MobileMenu";
+
 @import "../../components/HeroDisplay/heroDisplay";
 @import "../../components/HeroDisplay/DealFinder/flightform";
 @import "../../components/Footer/footer";
 @import "../../components/Misc/choice-banner";
-
+@import "../../components/MobileMenu/MobileMenu";
 *, body, html {
   font-family: 'Roboto', sans-serif;
 }
