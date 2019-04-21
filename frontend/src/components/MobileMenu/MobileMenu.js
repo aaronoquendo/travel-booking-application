@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-
+import './assets/styles/main.scss'
 class MobileMenu extends Component {
   constructor(props) {
     super(props)
@@ -9,6 +9,7 @@ class MobileMenu extends Component {
     }
     this.openMobileMenu = this.openMobileMenu.bind(this)
   }
+
   openMobileMenu () {
     let hamburgerIcon = document.querySelector('.hamburger.hamburger--slider')
     let mobileMenu = document.querySelector('.mobile-menu')
@@ -18,6 +19,7 @@ class MobileMenu extends Component {
       return { isMobileMenuOpen: !state.isMobileMenuOpen }
     })
   }
+
   render () {
     return ReactDOM.createPortal(
       <React.Fragment className="mobile-menu">
