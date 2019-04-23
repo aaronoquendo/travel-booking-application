@@ -1,33 +1,43 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import FlightSettings from './FlightSettings'
+import FlightsFilter from './FlightsFilter'
+import Flights from './Flights'
+import FlightSearchHeader from './FlightSearchHeader'
 
 class FlightsPage extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       startDate: new Date(),
       endDate: new Date(),
       from: '',
       to: '',
       numOfPassengers: ''
-    };
+    }
   }
 
   render() {
     return (
       <div className="category-form-container">
-      
         <div className="container">
           <div className="row">
-            <div className="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
-              Hello this is the filter section
+            <div className="content">
+              <FlightSearchHeader />
+              <div className="row">
+                <FlightsFilter/>
+                <Flights/>
+              </div>
             </div>
-            <div className="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9">
-              Hello this is the flights section
-          </div>
+
+
+
+            <div className="right-ads">
+              Here is where some flight ads will be displayed
+            </div>
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 

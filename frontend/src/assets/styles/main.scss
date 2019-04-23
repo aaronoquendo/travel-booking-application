@@ -1,11 +1,23 @@
 @import "reset";
 @import "variables";
+
+/* These are the site wide css imports*/
 @import "../../components/Header/header";
 @import "../../components/Header/mobilemenu";
+@import "../../components/Footer/footer";
+
+/* Here are the Landing page css imports*/
 @import "../../components/LandingPage/HeroDisplay/heroDisplay";
 @import "../../components/LandingPage/HeroDisplay/DealFinder/flightform";
-@import "../../components/Footer/footer";
-@import "../../components/Misc/choice-banner";
+
+@import "../../components/LandingPage/ChoiceBanner/choice-banner";
+
+/* Here are the flights page css imports*/
+@import "../../components/FlightsPage/flightsPage";
+@import "../../components/FlightsPage/flightSearchHeader";
+@import "../../components/FlightsPage/flightsFilter";
+
+/* Here css overides */
 *, body, html {
   font-family: 'Roboto', sans-serif;
 }
@@ -27,19 +39,17 @@
 .row {
   margin: 0;
 }
+
 @media (min-width: 576px) {
   .container {
     max-width: 768px;
   }
-
 }
-
 
 @media (min-width: 768px) {
   .container {
     max-width: 992px;
   }
-
   #MobileMenu{
     display: none !important;
   }
@@ -52,7 +62,6 @@
   .account-links{
     display: none !important;
   }
- 
   #header-hamburger-icon{
     display: block;
   }
@@ -60,9 +69,7 @@
     text-align: center;
     margin-bottom: 30px;
   }
-
 }
-
 
 @media (min-width: 992px){
   .container {
@@ -75,7 +82,6 @@
     margin-bottom: 20px;
   }
 }
-
 
 @media (min-width: 1200px){
   .container {

@@ -11,7 +11,7 @@ import HeroDisplay from './components/LandingPage/HeroDisplay/HeroDisplay';
 import Footer from './components/Footer/Footer';
 import RecommendedSection from './components/LandingPage/RecommendedSection/RecommendedSection';
 import FlightsPage from './components/FlightsPage/FlightsPage';
-import Banner from './components/Misc/Banner'
+import Banner from './components/LandingPage/ChoiceBanner/Banner'
 
 class App extends Component {
   render() {
