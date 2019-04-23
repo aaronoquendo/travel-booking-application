@@ -25,9 +25,12 @@ class RecommendedItem extends Component {
                     <p className="price-stops-item"> {itemDetail.num_of_stops} stops</p>
                   </div>
                 </div>
-                <button className="item-btn">
-                  <span className="btn-span">Find Flights</span>
-                </button>
+                <a href="/flights">
+                  <button className="item-btn">
+                    <span className="btn-span">Find Flights</span>
+                  </button>
+                </a>
+
               </div>
             </div>
           </div>

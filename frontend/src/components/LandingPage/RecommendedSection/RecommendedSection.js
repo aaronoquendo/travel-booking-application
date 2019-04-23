@@ -15,7 +15,7 @@ const trips = [
     num_of_days: 11,
     num_of_stops: 0,
     image: 'https://s7.bluegreenvacations.com/is/image/BGV/florida-miami-south-beach-ocean-drive-art-deco-nightlife?$bg2-hero-lg$&crop=0,0,2396,1544&anchor=1198,772',
-    link: '#'
+    link: '/flights'
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ const trips = [
     num_of_days: 7,
     num_of_stops: 1,
     image: 'https://media.timeout.com/images/104703258/image.jpg',
-    link: '#'
+    link: '/flights'
   },
   {
     id: 3,
@@ -43,7 +43,7 @@ const trips = [
     num_of_days: 10,
     num_of_stops: 0,
     image: 'https://assets.simpleviewcms.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/lasvegas/PM_Strip_2014_PH_North_Night_0069G_optimized_f4c0f862-8bb4-49ee-a728-98d2c1846714.jpg',
-    link: '#'
+    link: '/flights'
   }
 ]
 

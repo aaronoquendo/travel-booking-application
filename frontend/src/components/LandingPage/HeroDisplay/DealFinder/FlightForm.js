@@ -38,11 +38,10 @@ class FlightForm extends Component {
       [name]: value
     });
   }
-
-  
-
+  // searchFlights () {
+  //   location.href = '/flights'
+  // }
   render() {
-    console.log(this.state)
     return (
       <div className="category-form-container">
         <h1>Looking to save on your flight?</h1>
@@ -164,7 +163,7 @@ class FlightForm extends Component {
               </div>
 
               <div className="search-btn-wrapper">
-                <button type="submit" class="search-btn" aria-label="Search flights">
+                <button type="submit" class="search-btn" aria-label="Search flights" formaction="/flights" >
                   Search for flights
                   <i class="fas fa-arrow-right"></i>
                 </button>
