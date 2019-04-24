@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import FlightSettings from './FlightSettings'
 import FlightsFilter from './FlightsFilter'
 import Flights from './Flights'
 import FlightSearchHeader from './FlightSearchHeader'

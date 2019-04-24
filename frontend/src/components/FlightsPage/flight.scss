@@ -1,0 +1,51 @@
+.flights-results{
+  width: 72%;
+}
+
+.flight-container{
+  border-radius: .375rem 0 0 .375rem;
+  box-shadow: 0 1px 3px 0 rgba(37,32,31,.3);
+  margin-left: 15px;
+  display: flex;
+  .trip{
+    display: flex;
+    .airline-logo{
+      img{}
+    }
+    .flight-details{
+      display: flex;
+      .flight-start-time-and-location{
+        text-align: right;
+        .start-time{
+          display: block;
+     
+        }
+        .location{}
+      }
+      .flight-length{
+        .flight-length-and-numOfStops{
+          .flight-icon{
+            li{}
+          }
+          .flight-numOfStops{}
+        }
+      }
+      .flight-end-time-and-location{
+        .end-time{
+          display: block;
+        }
+        .location{}
+      }
+    }
+  }
+  .flight-price{
+    border-left: 1px solid grey;
+    .numOfDeals{}
+    .price{}
+    .select-btn-wrapper{
+      .select-btn{
+        .fas.fa-arrow-right{}
+      }
+    }
+  }
+}
