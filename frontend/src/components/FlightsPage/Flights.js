@@ -6,13 +6,19 @@ class Flights extends Component {
     super(props)
     this.state = {
     }
+    this.renderFlights = this.renderFlights.bind(this)
   }
+  renderFlights () {
+    const flights = [1,2,3,4,5,6,7,8,9,10]
 
+    return flights.map( (flight) => <Flight/>)
+  }
   render() {
     return (
       <div className="flights-results">
           <FlightsSorter />
-          <Flight/>
+          {this.renderFlights()}
+          
       </div>
     )
   }

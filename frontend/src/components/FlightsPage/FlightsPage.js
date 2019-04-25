@@ -19,10 +19,10 @@ class FlightsPage extends Component {
     return (
       <div className="category-form-container">
         <div className="container">
-          <div className="row">
+          <div className="row ">
             <div className="content">
               <FlightSearchHeader />
-              <div className="row">
+              <div id="flights-row" className="row">
                 <FlightsFilter/>
                 <Flights/>
               </div>

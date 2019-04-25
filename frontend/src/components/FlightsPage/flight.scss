@@ -1,50 +1,158 @@
 .flights-results{
   width: 72%;
-}
-
-.flight-container{
-  border-radius: .375rem 0 0 .375rem;
-  box-shadow: 0 1px 3px 0 rgba(37,32,31,.3);
-  margin-left: 15px;
-  display: flex;
-  .trip{
-    display: flex;
-    .airline-logo{
-      img{}
-    }
-    .flight-details{
+  .flight-sorter{
+    padding: .75rem 0;
+    padding-top: .3rem;
+    margin-left: 15px;
+    .search-results-and-sortBy{
       display: flex;
-      .flight-start-time-and-location{
-        text-align: right;
-        .start-time{
-          display: block;
-     
-        }
-        .location{}
+      align-items: center;
+      justify-content: space-between;
+      p{
+        font-size: .75rem;
+        line-height: 1.125rem;
+        color: #524c61;
       }
-      .flight-length{
-        .flight-length-and-numOfStops{
-          .flight-icon{
-            li{}
-          }
-          .flight-numOfStops{}
+      .sortBy-input{
+        label{
+          margin: 0 3px 0 0;
+          display: inline;
+          font-size: .75rem;
+          color: #524c61;
         }
-      }
-      .flight-end-time-and-location{
-        .end-time{
-          display: block;
+        #sort-select{
+          margin-left:6px;
         }
-        .location{}
       }
     }
   }
+}
+
+.flight-container{
+  border-radius: .375rem .375rem .375rem .375rem;
+  box-shadow: 0 1px 3px 0 rgba(37,32,31,.3);
+  margin-left: 15px;
+  display: flex;
+  margin-top: 1rem;
+  .flight-time-and-locations{
+    padding: 1.125rem;
+    flex: 2 1 auto;
+    .trip{
+      display: flex;
+      .airline-logo{
+        width:23%;
+        img{}
+      }
+      .flight-details{
+        display: flex;
+        width: 77%;
+        .flight-start-time-and-location{
+          text-align: right;
+          .start-time{
+            display: block;
+            font-weight: 700;
+            line-height: 1.5rem;
+          }
+          .location{
+            line-height: 1.5rem;
+          }
+        }
+       
+          .flight-length-and-numOfStops{
+            padding: 0 .750rem;
+            .flight-length{}
+            .flight-icon{
+              height: 2px;
+              width: 90%;
+              background-color: #817b8f;
+              margin: .375rem auto;
+              padding: 0;
+              position: relative;
+              border-radius: .375rem;
+              display: block;
+              text-align: center;
+              line-height: 0;
+              li{
+                background-image: none;
+                background-color: #1e3cbc;
+                border-radius: .375rem;
+                box-shadow: 0 0 0 2px #fff;
+                width: .375rem;
+                height: .375rem;
+                line-height: 0;
+                top: -2px;
+                position: relative;
+                display: inline-block;
+                margin: 0 4%;
+                zoom: 1;
+              }
+          
+            }
+            .flight-numOfStops{
+              font-size: .75rem;
+            }
+          }
+        
+        .flight-end-time-and-location{
+          .end-time{
+            display: block;
+            font-weight: 700;
+            line-height: 1.5rem;
+          }
+          .location{
+            line-height: 1.5rem;
+          }
+        }
+      }
+    }
+    .trip.flight-return{
+      margin-top: 1.125rem;
+    }
+  }
   .flight-price{
-    border-left: 1px solid grey;
-    .numOfDeals{}
-    .price{}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px dotted grey;
+    flex: 0 0 32%;
+    padding: 1.125rem;
+    border-radius: 0 .375rem .375rem 0;
+    .numOfDeals{
+      line-height: 1.125rem;
+      font-size: .75rem;
+      margin-bottom: 0;
+      color: #9a95a7;
+    }
+    .price{
+      font-size: 1.5rem;
+      line-height: 1.875rem;
+      font-weight: 400;
+      letter-spacing: normal;
+      font-weight: 700;
+      color: #524c61;
+      text-decoration: none;
+    }
     .select-btn-wrapper{
       .select-btn{
-        .fas.fa-arrow-right{}
+        letter-spacing: .5px;
+        cursor: pointer;
+        color:white;
+        margin-top: .375rem;
+        padding: .375rem 1.125rem;
+        border: 0;
+        border-radius: 1.125rem;
+        background-color: #00d775;
+        font-size: 1.15rem;
+        font-weight: 700;
+        line-height: 1.5rem;
+        user-select: none;
+        outline: none;
+        .fas.fa-arrow-right{
+          position: relative;
+          top: 1.5px;
+          margin-left:5px;
+        }
       }
     }
   }

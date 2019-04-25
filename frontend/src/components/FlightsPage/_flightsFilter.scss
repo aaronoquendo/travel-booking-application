@@ -3,8 +3,9 @@
   .price-alert{
     display: flex;
     justify-content: center;
-    margin-top: 1.4rem;
-    margin-bottom: 1.4rem;
+
+    margin-bottom: 0.4rem;
+
     .price-alert-btn{
       background-color: var(--bpk-button-secondary-background-color,#fff);
       -webkit-box-shadow: 0 0 0 2px #e6e4eb inset;
@@ -13,6 +14,7 @@
       box-shadow: 0 0 0 2px var(--bpk-button-secondary-border-color,#e6e4eb) inset;
       padding: 6px 24px;
       border-radius: 1.125rem;
+      cursor: pointer;
     }
     span{
       color: #1e3cbc;
@@ -27,7 +29,9 @@
   .flight-settings{
     .setting{
       padding: .75rem 0;
+     
       .setting-header{
+        cursor: pointer;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -49,6 +53,9 @@
           .setting-content{}
         }
       }
+    }
+    .setting.stops-setting{
+
     }
   }
 }
