@@ -47,6 +47,26 @@
   }
 }
 
+@media (max-width: 560px) {
+ .flight-container{
+   flex-direction: column;
+   .flight-price{
+     border: 1px dotted grey;
+     border-left:none;
+   }
+ }
+ .flight-search-header .search-dates .search-date {
+  justify-content: flex-end;
+}
+ .flight-search-header .search-dates {
+   flex-direction: column;
+ }
+ .flight-container .flight-time-and-locations .trip .flight-details {
+  justify-content: center;
+  }
+}
+
+
 @media (min-width: 768px) {
   .container {
     max-width: 992px;
@@ -66,6 +86,22 @@
   #header-hamburger-icon{
     display: block;
   }
+  .flights-filter{
+    display: none;
+  }
+  .flight-sorter{
+    margin: 0 15px;
+  }
+  #flights-row{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .flight-container{
+    margin-right: 15px;
+  }
+  .flights-results{
+    width:100%;
+  }
   .site-footer .footer-container .footer-row1 .footer-col {
     text-align: center;
     margin-bottom: 30px;
@@ -84,6 +120,15 @@
   }
 }
 
+@media (max-width: 1050px){
+  .recommended-item {
+    margin-bottom: 20px;
+  }
+  .content {
+    width: 100%;
+}
+  .right-ads{display: none;}
+}
 @media (min-width: 1200px){
   .container {
     max-width: 1280px;
