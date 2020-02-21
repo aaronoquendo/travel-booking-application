@@ -41,6 +41,15 @@ class FlightForm extends Component {
   // searchFlights () {
   //   location.href = '/flights'
   // }
+
+  getResults = async (event) => {
+    event.preventDefault()
+    console.log("hello");
+    const response = await fetch('http://localhost:5000/api/create-session', { method: 'POST' });
+    const sessionKey = await response;
+    await console.log("sessionKey",sessionKey); 
+  }
+
   render() {
     return (
       <div className="category-form-container">
@@ -163,7 +172,7 @@ class FlightForm extends Component {
               </div>
 
               <div className="search-btn-wrapper">
-                <button type="submit" class="search-btn" aria-label="Search flights" formaction="/flights" >
+                <button type="submit" class="search-btn" aria-label="Search flights" onClick={this.getResults} >
                   Search for flights
                   <i class="fas fa-arrow-right"></i>
                 </button>

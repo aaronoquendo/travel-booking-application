@@ -48,12 +48,12 @@
 }
 
 @media (max-width: 560px) {
- .flight-container{
-   flex-direction: column;
-   .flight-price{
-     border: 1px dotted grey;
-     border-left:none;
-   }
+  .flight-container{
+    flex-direction: column;
+    .flight-price{
+      border: 1px dotted grey;
+      border-left:none;
+    }
  }
  .flight-search-header .search-dates .search-date {
   justify-content: flex-end;

@@ -21,15 +21,13 @@ class MobileMenu extends Component {
 
   render () {
     return ReactDOM.createPortal(
-      <React.Fragment className="mobile-menu">
-  
-        ksghjsghjdhg
+      <div className="mobile-menu">
         <button id='header-hamburger-icon' className='hamburger hamburger--slider' type='button' onClick={this.openMobileMenu}>
               <span className='hamburger-box'>
                 <span className='hamburger-inner' />
               </span>
             </button>
-      </React.Fragment>,
+      </div>,
       document.querySelector('#MobileMenu')
     )
   }

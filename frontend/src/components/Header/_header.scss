@@ -39,7 +39,7 @@
           }
         }
       }
-   
+
       .category-links{
         height: $headerHeight;
         margin-left: 40px;
@@ -96,6 +96,7 @@
 #header-hamburger-icon{
   display: none;
   outline: none;
+  height: 50px;
 }
 .hamburger-box{
   width: 30px;
